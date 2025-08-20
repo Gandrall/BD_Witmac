@@ -19,6 +19,16 @@ BEGIN
     VALUES ('WitMac', 'Av. Tecnológica 123')
     RETURNING id INTO empresa_id;
 
+-- ADMINISTRADOR
+	INSERT INTO administrador (nombre, correo, contrasena, empresa_id)
+    VALUES ('jUANDO', 'adsad', '123f', empresa_id)
+    RETURNING id INTO administrador_id;
+
+   -- EMPLEADO
+	INSERT INTO  empleado (nombre, correo, contrasena, empresa_id)
+    VALUES ('Otis', 'qwwsd', '2467', empresa_id)
+    RETURNING id INTO empleado_id;
+
     -- 2. CENTRAL
     INSERT INTO central (nombre, direccion, empresa_id)
     VALUES ('Central Norte', 'Calle Central 45', empresa_id)
