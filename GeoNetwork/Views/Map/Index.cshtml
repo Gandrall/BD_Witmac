@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Mapa";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div id="map" style="height: 500px;"></div>
+
+@section Scripts {
+    <script>
+        var map = L.map('map').setView([0, 0], 2); // Coordenadas iniciales
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19
+        }).addTo(map);
+    </script>
+}
