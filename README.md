@@ -136,3 +136,22 @@ CREATE TABLE spliter_cliente (
     caja_nat_id INT REFERENCES caja_nat(id),
     spliter_principal_id INT REFERENCES spliter_principal(id)
 );
+
+
+
+DROP TABLE IF EXISTS spliter_cliente;
+DROP TABLE IF EXISTS spliter_secundario;
+DROP TABLE IF EXISTS spliter_principal;
+DROP TABLE IF EXISTS caja_nat;
+DROP TABLE IF EXISTS sub_sangrado;
+DROP TABLE IF EXISTS sangrado;
+DROP TABLE IF EXISTS caja_empalme;
+DROP TABLE IF EXISTS sub_troncal;
+DROP TABLE IF EXISTS troncal;
+DROP TABLE IF EXISTS odf;
+DROP TABLE IF EXISTS olt;
+DROP TABLE IF EXISTS central;
+DROP TABLE IF EXISTS empleado;
+DROP TABLE IF EXISTS administrador;
+DROP TABLE IF EXISTS empresa;
+
